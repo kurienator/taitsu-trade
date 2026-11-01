@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.kuri1.taitsu.fetch</string>
+  <key>ProgramArguments</key>
+  <array><string>/bin/bash</string><string>/Users/kuri1/claude/taitsu-trade/fetch_batch.sh</string></array>
+  <key>EnvironmentVariables</key>
+  <dict><key>LIMIT</key><string>25</string></dict>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>7</integer></dict>
+    <dict><key>Hour</key><integer>3</integer><key>Minute</key><integer>17</integer></dict>
+    <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>27</integer></dict>
+    <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>37</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>47</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>7</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>17</integer></dict>
+    <dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>27</integer></dict>
+  </array>
+  <key>StandardOutPath</key><string>/Users/kuri1/claude/taitsu-trade/logs/launchd.out</string>
+  <key>StandardErrorPath</key><string>/Users/kuri1/claude/taitsu-trade/logs/launchd.err</string>
+</dict>
+</plist>

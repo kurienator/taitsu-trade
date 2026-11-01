@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.kuri1.taitsu.gitsync</string>
+  <key>ProgramArguments</key>
+  <array><string>/bin/bash</string><string>/Users/kuri1/claude/taitsu-trade/git_sync.sh</string></array>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>41</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>41</integer></dict>
+  </array>
+  <key>StandardOutPath</key><string>/Users/kuri1/claude/taitsu-trade/logs/gitsync.out</string>
+  <key>StandardErrorPath</key><string>/Users/kuri1/claude/taitsu-trade/logs/gitsync.err</string>
+</dict>
+</plist>
