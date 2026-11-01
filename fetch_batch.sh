@@ -28,6 +28,12 @@ for id in $(tail -r video_list.tsv | cut -f1); do
     fails=0
   elif echo "$out" | grep -q "ERROR"; then
     err=$(echo "$out" | grep ERROR | head -1)
+    # メンバー限定動画は再試行しても取れないので nosubs に入れて二度と触らない
+    if echo "$err" | grep -qiE "members|join this channel|メンバー"; then
+      printf '%s\t%s\tmembers-only\n' "$id" "$(date +%F)" >> nosubs.tsv
+      log MEMBERS "$id" ""
+      continue
+    fi
     printf '%s\t%s\t%s\n' "$id" "$(date +%F)" "$err" >> failed.tsv
     echo "$(date) FAIL $id $err" >> "$LOG"
     log FAIL "$id" "$err"

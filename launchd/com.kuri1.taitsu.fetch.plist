@@ -9,14 +9,14 @@
   <dict><key>LIMIT</key><string>25</string></dict>
   <key>StartCalendarInterval</key>
   <array>
-    <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>7</integer></dict>
-    <dict><key>Hour</key><integer>3</integer><key>Minute</key><integer>17</integer></dict>
-    <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>27</integer></dict>
-    <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>37</integer></dict>
-    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>47</integer></dict>
-    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>7</integer></dict>
-    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>17</integer></dict>
-    <dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>27</integer></dict>
+    <dict><key>Hour</key><integer>1</integer><key>Minute</key><integer>37</integer></dict>
+    <dict><key>Hour</key><integer>4</integer><key>Minute</key><integer>47</integer></dict>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>57</integer></dict>
+    <dict><key>Hour</key><integer>11</integer><key>Minute</key><integer>7</integer></dict>
+    <dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>17</integer></dict>
+    <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>37</integer></dict>
+    <dict><key>Hour</key><integer>19</integer><key>Minute</key><integer>47</integer></dict>
+    <dict><key>Hour</key><integer>22</integer><key>Minute</key><integer>57</integer></dict>
   </array>
   <key>StandardOutPath</key><string>/Users/kuri1/claude/taitsu-trade/logs/launchd.out</string>
   <key>StandardErrorPath</key><string>/Users/kuri1/claude/taitsu-trade/logs/launchd.err</string>

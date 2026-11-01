@@ -7,6 +7,8 @@ if ! git diff --cached --quiet; then
   git commit -qm "自動反映 $(date '+%Y-%m-%d %H:%M')"
 fi
 git remote get-url origin >/dev/null 2>&1 || exit 0
+# クラウド側の編集（ルール文書など）を先に取り込んでから push する
+git pull -q --rebase origin main || { git rebase --abort 2>/dev/null; exit 1; }
 for i in 1 2 3 4; do
   git push -q origin main && exit 0
   sleep $((2**i))
