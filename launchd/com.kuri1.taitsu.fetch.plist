@@ -6,7 +6,7 @@
   <key>ProgramArguments</key>
   <array><string>/bin/bash</string><string>/Users/kuri1/claude/taitsu-trade/fetch_batch.sh</string></array>
   <key>EnvironmentVariables</key>
-  <dict><key>LIMIT</key><string>25</string></dict>
+  <dict><key>LIMIT</key><string>15</string></dict>
   <key>StartCalendarInterval</key>
   <array>
     <dict><key>Hour</key><integer>1</integer><key>Minute</key><integer>37</integer></dict>
