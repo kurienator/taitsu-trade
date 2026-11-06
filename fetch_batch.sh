@@ -16,7 +16,7 @@ for id in $(tail -r video_list.tsv | cut -f1); do
   ls subs/*_"$id".ja.vtt >/dev/null 2>&1 && continue
   grep -q "^$id	" nosubs.tsv && continue
   [ "$(grep -c "^$id	" failed.tsv)" -ge 3 ] && continue
-  [ "$n" -gt 0 ] && sleep $((60 + RANDOM % 121))
+  [ "$n" -gt 0 ] && sleep $((180 + RANDOM % 121))  # 1本ごとに3〜5分空ける（429対策、2026-11-06）
   n=$((n+1))
   out=$("$Y" --skip-download --write-auto-subs --write-subs --sub-langs ja --sub-format vtt \
         --extractor-args "youtube:player_client=android" \
